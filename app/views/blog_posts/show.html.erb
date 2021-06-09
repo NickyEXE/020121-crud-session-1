@@ -4,3 +4,4 @@
 <h3>Rating: <%= rating(@blog_post.rating) %></h3>
 <p><%= @blog_post.opinion %></p>
 <%= button_to "Edit #{@blog_post.title.titleize}", edit_blog_post_path(@blog_post), method: :get %>
+<%= button_to "Delete #{@blog_post.title.titleize}", blog_post_path(@blog_post), method: :delete %>
