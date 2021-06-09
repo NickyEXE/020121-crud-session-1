@@ -1,0 +1,6 @@
+<h1><%= @blog_post.title %></h1>
+<h3>By <%= @blog_post.author %> for <%= @blog_post.outlet %></h3>
+<%# The method #rating is defined in our helpers! %>
+<h3>Rating: <%= rating(@blog_post.rating) %></h3>
+<p><%= @blog_post.opinion %></p>
+<%= button_to "Edit #{@blog_post.title.titleize}", edit_blog_post_path(@blog_post), method: :get %>

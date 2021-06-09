@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+BlogPost.create(title: "Nate Silver has another opinion", author: "Nate Silver", outlet: "five30eight", rating: 2, opinion: "Just because you know data doesn't make you an expert in this field")

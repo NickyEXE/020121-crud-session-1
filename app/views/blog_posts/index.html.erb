@@ -1,0 +1,7 @@
+<h1>Here's Our Reviewed Blog Posts</h1>
+
+<ul>
+<% @blog_posts.each do |blog_post| %>
+  <li><%= link_to blog_post.title, blog_post_path(blog_post) %></li>
+<% end %>
+</ul>
